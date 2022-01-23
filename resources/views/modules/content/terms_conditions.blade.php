@@ -31,7 +31,7 @@
 @endsection
 @section('body')
 <main>
-    <section class="slider-area " style="height: 180px;">
+    <section class="slider-area " style="height: 230px;">
         <div class="slider-active">
             <div class="single-slider slider-height4 d-flex align-items-center" >
                 <div class="container">

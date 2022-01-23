@@ -21,7 +21,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="{{route('home')}}"><img src="{{asset('public/assets/img/logo/logo.png')}}" alt=""></a>
+                                    <a href="{{route('home')}}"><img src="{{asset('public/assets/img/logo/logo.png')}}" alt="" class="logo-img"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -37,7 +37,7 @@
                                                 @endauth
                                                 <li class="active" ><a href="{{route('course')}}">Course</a></li>
                                                 <li class="active" ><a href="{{route('routine')}}">Routine</a></li>
-                                                <li>
+                                                
                                                 @auth
                                                     <li class="active" ><a href="{{route('logout')}}">Logout</a></li>
                                                 @endauth
@@ -51,8 +51,8 @@
                                                 <li><a href="{{route('contact.us')}}">Contact</a></li>
                                                 <!-- Button -->
                                                 @guest
-                                                <li class="button-header margin-left "><a href="{{route('register')}}" class="btn">Join</a></li>
-                                                <li class="button-header"><a href="{{route('login')}}" class="btn btn3">Login</a></li>
+                                                <li class="button-header margin-left bg-transparent"><a href="{{route('login')}}" class="btn">Login</a></li>
+                                                <li class="button-header"><a href="{{route('register')}}" class="btn">Join</a></li>
                                                 @endguest
                                                 @auth
 

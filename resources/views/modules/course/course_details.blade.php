@@ -45,15 +45,6 @@
         font-size: 32px;
         color: #fff;
     }
-    .ss a, #showall{
-        display:inline-block;
-        margin:0 1%;
-        padding:2%;
-        border-radius: 10%;
-        -webkit-box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.2);
-        -moz-box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.2);
-        box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.2);
-    }
     .ss a:nth-child(1){
         background:#ff7f01; 
         color: #eee;
@@ -107,16 +98,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-9">
-                            <div class="ed_detail_wrap light">
+                            <div class="ed_detail_wrap light" style="margin-top: 80px;">
                                 <div class="ed_header_caption">
                                     <h2 class="ed_title">{{@$course->name}}</h2>
-                                    <a href="{{route('enroll.student',@$course->id)}}" class="genric-btn danger radius floatR Fs18">Enrollment Now</a>
                                     <div class="clearfix"></div>
-                                    <ul>
-                                        <li><i class="ti-calendar"></i>Start Date : {{date('d-m-Y', strtotime(@$course->from_date))}}</li>
+                                    <ul class="mt-20">
+                                        <li class="d-block mb-3"><i class="ti-calendar"></i>Start Date : {{date('d-m-Y', strtotime(@$course->from_date))}}</li>
                                         <!-- <li><i class="ti-control-forward"></i>102 Lectures</li> -->
-                                        <li><i class="ti-calendar"></i>End Date : {{date('d-m-Y', strtotime(@$course->to_date))}}</li>
+                                        <li class="d-block mb-3"><i class="ti-calendar"></i>End Date : {{date('d-m-Y', strtotime(@$course->to_date))}}</li>
                                     </ul>
+                                    <a href="{{route('enroll.student',@$course->id)}}" class="genric-btn danger Fs18 mt-40 rounded">Enrollment Now</a>
                                 </div>
                             </div>
                         </div>
@@ -127,9 +118,9 @@
     </section>
     <section class="courses-details mb-5">
         <div class="container">
-            <div class="row flex-row-reverse ss">
-                <div class="menu">
-                    <a  class="showSingle" target="3">Overview</a>
+            <div class="row flex-row-reverse ss" style="transform: translateY(-74px);">
+                <div class="menu text-left">
+                    <a  class="showSingle shadow-none" target="3">Overview</a>
                     {{-- <a  class="showSingle" target="4">Meterials</a> --}}
                 </div>
                 <section class="cnt">
